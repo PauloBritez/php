@@ -1,9 +1,24 @@
-body {
-    margin: 0px;
+input, a {
+    display: block;
 }
-.exemplo {
-    color: beige;
-   background-color: #000;
-   width: 100%;
-    height: 100px;
+:required {
+    background-color: blue;
+}
+a [href^="http:"]:after {
+    background-color: blue;
+}
+a [href^="https:"] {
+    background-color: red;
+}
+a [href*="mundo"] {
+    background-color: green;
+}
+a [href$=".com"] {
+    background-color: orange;
+}
+a [href*="futebol"] {
+    background-color: rgb(128, 87, 0);
+}
+a [href*="professores"] {
+    background-color: rgb(128, 0, 92);
 }
